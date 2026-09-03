@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Stackt</title>
+<meta name="description" content="What Stackt collects, who sees it, and how to opt out.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #f4f4f6; --surface: #ffffff; --surface-2: #ebebef; --border: #d8d8e0;
+    --text: #17171c; --text-secondary: #55555f; --accent: #2166cc; --accent-soft: rgba(33,102,204,0.09);
+    --ok: #157a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212; --surface: #1a1a24; --surface-2: #1e1e2e; --border: #2a2a3a;
+      --text: #e0e0e0; --text-secondary: #8888aa; --accent: #4a9eff; --accent-soft: rgba(74,158,255,0.12);
+      --ok: #00ff88;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212; --surface: #1a1a24; --surface-2: #1e1e2e; --border: #2a2a3a;
+    --text: #e0e0e0; --text-secondary: #8888aa; --accent: #4a9eff; --accent-soft: rgba(74,158,255,0.12);
+    --ok: #00ff88;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { display: flex; flex-direction: column; gap: 10px; padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid var(--border); }
+  .wordmark { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; }
+  h1 { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: clamp(32px, 6vw, 44px); letter-spacing: 0.01em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--text-secondary); letter-spacing: 0.02em; }
+  .meta b { color: var(--text-secondary); font-weight: 500; }
+  nav.pagejump { display: flex; gap: 18px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; margin-top: 6px; }
+  nav.pagejump a { color: var(--text-secondary); }
+  nav.pagejump a:hover { color: var(--accent); }
+  h2 { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
+  section { margin-bottom: 40px; }
+  section > p, section > ul { margin: 0 0 14px; color: var(--text); }
+  section > p:last-child, section > ul:last-child { margin-bottom: 0; }
+  p { max-width: 62ch; }
+  ul { padding-left: 1.2em; max-width: 62ch; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+  a { color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+  strong { color: var(--text); font-weight: 600; }
+  .table { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .row { display: grid; grid-template-columns: 1fr 1.3fr 1fr; gap: 16px; padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .row:last-child { border-bottom: none; }
+  .row.head { background: var(--surface-2); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-secondary); }
+  .row:not(.head) { font-size: 14.5px; }
+  .row div:first-child { color: var(--text); font-weight: 500; }
+  .row div:nth-child(2) { color: var(--text-secondary); }
+  .tag { display: inline-block; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; padding: 3px 8px; border-radius: 5px; background: var(--accent-soft); color: var(--accent); width: fit-content; }
+  .tag.no-track { background: color-mix(in srgb, var(--ok) 14%, transparent); color: var(--ok); }
+  .callout { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 16px 18px; background: var(--surface); font-size: 14.5px; color: var(--text-secondary); }
+  .callout strong { color: var(--text); }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--text-secondary); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  @media (max-width: 520px) {
+    .row { grid-template-columns: 1fr; gap: 4px; }
+    .row.head { display: none; }
+    .row:not(.head) div:first-child { font-weight: 600; }
+    .row:not(.head) div:nth-child(2)::before { content: "→ "; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="wordmark">Stackt</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span><b>Effective</b> September 3, 2026</span>
+      <span><b>App</b> Stackt — iOS</span>
+      <span><b>Bundle ID</b> dev.hanoi.stackt</span>
+    </div>
+    <nav class="pagejump"><a href="support.html">→ Support &amp; FAQ</a></nav>
+  </header>
+
+  <section>
+    <p>Stackt is a puzzle game. It does not require an account, and it does not collect your name, email, or any profile information. This page explains the only two places data leaves your device: showing ads, and processing a purchase.</p>
+  </section>
+
+  <section>
+    <h2>What's collected, at a glance</h2>
+    <div class="table">
+      <div class="row head"><div>Data</div><div>Collected by</div><div>Used for</div></div>
+      <div class="row"><div>Ad interaction data</div><div>Google AdMob</div><div><span class="tag">Non-personalized ad delivery</span></div></div>
+      <div class="row"><div>Purchase receipt</div><div>Apple (StoreKit)</div><div><span class="tag no-track">Unlocking Remove Ads</span></div></div>
+      <div class="row"><div>Game progress, settings</div><div>Stored on your device only</div><div><span class="tag no-track">Never leaves device</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Advertising</h2>
+    <p>The free version of Stackt shows ads between rounds, served by <strong>Google AdMob</strong>. Stackt does not request permission to track you across other apps or websites, and does not link any identifier to your identity — AdMob serves <strong>non-personalized, contextual ads</strong> only.</p>
+    <p>AdMob may still process basic technical signals (like approximate location from IP, and ad impression/click counts) to deliver and measure ads and prevent fraud. This is handled under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+    <p>Purchasing <strong>Remove Ads</strong> from the in-game Shop turns advertising off entirely — no further ad requests are made.</p>
+  </section>
+
+  <section>
+    <h2>In-app purchase</h2>
+    <p>The Remove Ads purchase is processed entirely by Apple through StoreKit. Stackt never sees or stores your payment details — Apple handles billing, receipts, and purchase restoration under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>Your round progress, high scores, streaks, and sound/haptics settings are stored locally with UserDefaults and SwiftData. None of it is transmitted anywhere, uninstalling the app deletes it, and Stackt has no server of its own to send it to.</p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>After your first win, Stackt may ask permission to send a daily reminder to keep your streak going. This is scheduled entirely on your device — no data is sent anywhere to make it happen, and you can turn it off anytime in <strong>iOS Settings → Stackt → Notifications</strong>.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>Stackt is listed under the Games category and is not directed at children under 13. We don't knowingly collect data from children. Advertising on the app is served under Google AdMob's standard (non-child-directed) treatment.</p>
+  </section>
+
+  <section>
+    <h2>Your choices</h2>
+    <ul>
+      <li>Purchase Remove Ads to stop ad requests entirely.</li>
+      <li>Turn off the daily reminder anytime in iOS Settings.</li>
+      <li>Delete the app to remove all locally stored progress.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="callout"><strong>Changes to this policy</strong> — if Stackt's data practices change (for example, adding a new service), this page will be updated and the "Effective" date above will change accordingly.</div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy or your data: <a href="mailto:julai1433@gmail.com">julai1433@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>Stackt</span>
+    <span>dev.hanoi.stackt</span>
+  </footer>
+</div>
+</body>
+</html>

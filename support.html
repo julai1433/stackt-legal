@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Stackt</title>
+<meta name="description" content="Get help with Stackt: FAQ, contact, and Remove Ads purchase issues.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #f4f4f6; --surface: #ffffff; --surface-2: #ebebef; --border: #d8d8e0;
+    --text: #17171c; --text-secondary: #55555f; --accent: #2166cc; --accent-soft: rgba(33,102,204,0.09);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212; --surface: #1a1a24; --surface-2: #1e1e2e; --border: #2a2a3a;
+      --text: #e0e0e0; --text-secondary: #8888aa; --accent: #4a9eff; --accent-soft: rgba(74,158,255,0.12);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212; --surface: #1a1a24; --surface-2: #1e1e2e; --border: #2a2a3a;
+    --text: #e0e0e0; --text-secondary: #8888aa; --accent: #4a9eff; --accent-soft: rgba(74,158,255,0.12);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { display: flex; flex-direction: column; gap: 10px; padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid var(--border); }
+  .wordmark { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; }
+  h1 { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: clamp(32px, 6vw, 44px); letter-spacing: 0.01em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+  nav.pagejump { display: flex; gap: 18px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; margin-top: 6px; }
+  nav.pagejump a { color: var(--text-secondary); }
+  nav.pagejump a:hover { color: var(--accent); }
+  section { margin-bottom: 40px; }
+  p { max-width: 62ch; margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+  .faq dt { font-weight: 600; color: var(--text); margin-bottom: 4px; }
+  .faq dd { margin: 0 0 20px; color: var(--text-secondary); max-width: 62ch; }
+  .faq dd:last-child { margin-bottom: 0; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--text-secondary); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="wordmark">Stackt</div>
+    <h1>Support</h1>
+    <nav class="pagejump"><a href="privacy.html">→ Privacy Policy</a></nav>
+  </header>
+
+  <section>
+    <p>Something not working, or have a question about Stackt? Reach out — most replies go out within a couple of days.</p>
+    <p><a href="mailto:julai1433@gmail.com?subject=Stackt%20Support">julai1433@gmail.com</a></p>
+  </section>
+
+  <section>
+    <dl class="faq">
+      <dt>Is Stackt free?</dt>
+      <dd>Yes. Stackt is free to play with ads between rounds. A one-time Remove Ads purchase is available in the Shop if you'd rather play ad-free — it's a single payment, not a subscription.</dd>
+
+      <dt>I bought Remove Ads but still see ads / it's not restoring on a new device</dt>
+      <dd>Open the Shop and tap Restore Purchases — Apple re-links it to your Apple ID automatically. If that doesn't fix it, email us the approximate purchase date and we'll sort it out.</dd>
+
+      <dt>How does the Daily Challenge work?</dt>
+      <dd>Everyone gets the same puzzle each day. Complete it to keep your streak alive — a new one unlocks at midnight local time.</dd>
+
+      <dt>Can I play offline?</dt>
+      <dd>Yes, the puzzle itself needs no connection. Ads simply won't load without one.</dd>
+
+      <dt>How do I delete my data?</dt>
+      <dd>Everything lives on your device only — deleting the app deletes your progress. There's no account or server-side data to remove.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <span>Stackt</span>
+    <span>dev.hanoi.stackt</span>
+  </footer>
+</div>
+</body>
+</html>
